@@ -27,6 +27,14 @@ public class openingActivity extends FragmentActivity {
 
             }
         });
+        findViewById(R.id.sign_up_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), SignUpActivity.class));
+
+            }
+        });
+
 /*
     Intent intent = new Intent(this, MainActivity.class);
     startActivity(intent);
