@@ -15,7 +15,6 @@
 
     <item name="android:strokeColor">@color/red</item>
     <item name="android:textColorHint">#000000</item>
-    <item name="android:background">@drawable/rounded_corner</item>
     <item name="colorControlActivated">#000000</item>
     <item name="colorPrimaryVariant">@color/red</item>
     <item name="colorSecondaryVariant">@color/red</item>

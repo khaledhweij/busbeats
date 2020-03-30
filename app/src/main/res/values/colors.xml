@@ -3,5 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="red">#FF0031</color>
-    <color name="gray">#CFCACA</color>
+    <color name="grey">#CFCACA</color>
+    <color name="colorPurple_A400">#D500F9</color>
+    <color name="colorPurple_900">#4A148C</color>
+    <color name="colorGreen_A400">#00E676</color>
+    <color name="colorGreen_900">#1B5E20</color>
+    <color name="Transperant">#00000000"</color>
 </resources>

@@ -2,6 +2,7 @@ package com.unundefined.newbusbeats;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,7 +21,10 @@ public class openingActivity extends FragmentActivity {
         findViewById(R.id.opening_background).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                findViewById(R.id.opening_background).setVisibility(View.GONE);
+                findViewById(R.id.opening_layout).setBackgroundResource(R.drawable.drawable_purple_gradient);
                 findViewById(R.id.login_layout).setVisibility(View.VISIBLE);
+
             }
         });
 /*
