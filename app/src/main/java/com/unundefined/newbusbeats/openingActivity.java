@@ -22,12 +22,12 @@ public class openingActivity extends FragmentActivity {
             @Override
             public void onClick(View view) {
                 findViewById(R.id.opening_background).setVisibility(View.GONE);
-                findViewById(R.id.opening_layout).setBackgroundResource(R.drawable.drawable_purple_gradient);
+                findViewById(R.id.opening_layout).setBackgroundColor(getResources().getColor(R.color.dark_blue));
                 findViewById(R.id.login_layout).setVisibility(View.VISIBLE);
 
             }
         });
-        findViewById(R.id.sign_up_button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.do_not_have_an_account).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), SignUpActivity.class));

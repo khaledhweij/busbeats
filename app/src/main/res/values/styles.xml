@@ -12,7 +12,8 @@
     <!-- New MaterialComponents attributes. -->
         <style name="Widget.MaterialComponents.TextInputLayout.FilledBox" parent="Theme.MaterialComponents">
 
-
+            <item name="boxStrokeWidth">0dp</item>
+            <item name="boxStrokeWidthFocused">0dp</item>
     <item name="android:strokeColor">@color/red</item>
     <item name="android:textColorHint">#000000</item>
     <item name="colorControlActivated">#000000</item>

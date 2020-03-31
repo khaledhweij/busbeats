@@ -31,16 +31,47 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/rounded_corner"
         android:orientation="vertical"
-        android:visibility="visible"
+        android:visibility="gone"
         >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:paddingBottom="10dp"
-            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <View
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:background="@color/bright_green"
+                android:layout_height="2dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:text="Login"
+                android:textColor="@color/bright_green"
+                android:textSize="30dp"
+                />
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/bright_green"/>
+
+        </LinearLayout>
 
 
 
@@ -107,14 +138,13 @@
             android:id="@+id/sign_in_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
 
             android:text="Sign in"
             android:paddingRight="50dp"
             android:paddingLeft="50dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="0dp"
-            android:layout_marginLeft="10dp"
 
             />
 
@@ -135,7 +165,7 @@
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="2dp"
-                android:background="@android:color/black"
+                android:background="@color/bright_green"
 
                 />
             <TextView
@@ -145,6 +175,7 @@
                 android:textSize="20dp"
                 android:layout_gravity="center_vertical"
                 android:text="Or log in with"
+                android:textColor="@color/bright_green"
                 android:paddingTop="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
@@ -154,7 +185,7 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:background="@android:color/black"/>
+                android:background="@color/bright_green"/>
         </LinearLayout>
 
         <LinearLayout
@@ -185,29 +216,23 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="10dp"
+
                 />
 
 
             <TextView
+                android:id="@+id/do_not_have_an_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="* Don't have an account ?  "
-                android:textSize="22dp"
-                android:textColor="#000000"
-                />
-            <Button
-                android:layout_marginRight="10dp"
-                android:id="@+id/sign_up_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Sign Up"
-                android:background="@drawable/rounded_corner"
-                android:paddingRight="50dp"
-                android:paddingLeft="50dp"
+                android:layout_gravity="center"
+                android:text="Do not have an account ?"
+                android:textStyle="bold"
+                android:textSize="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="00dp"
+                android:textColor="@color/bright_green"
+                android:clickable="true"
                 />
+
 
 
 
