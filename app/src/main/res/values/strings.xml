@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">newbusbeats</string>
+
+
     <string name="facebook_app_id">[APP_ID]</string>
     <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
-
+    <!-- Sign up layout -->
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Prefer not \nto specify</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="agreeing_terms_text">By clicking Register you are agreeing to</string>
+    <string name="the_terms_and_conditions">The Terms and Conditions</string>
+    <string name="already_a_member">Already a member ?</string>
 </resources>

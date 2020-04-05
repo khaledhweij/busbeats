@@ -1,65 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_blue"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="200dp"
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/rounded_bottom_corner"
 
         >
 
 
-    <Button
-        android:id="@+id/text"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:text="Contained button"
-        android:textSize="25dp"
-        android:drawableLeft="@drawable/ic_launcher_foreground"
+    </TextView>
 
-
-        />
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        >
         <Button
-            android:id="@+id/text1"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="Contained button"
-            android:textSize="25dp"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Book A Ride"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:drawableTop="@drawable/book_ride_icon"
+            android:paddingTop="30dp"
             />
 
         <Button
             android:id="@+id/text2"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="Contained button"
-            android:textSize="25dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Button 2"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:drawableTop="@drawable/book_ride_icon"
+            android:paddingTop="30dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/specific_ride_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Search for \n specific ride "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:drawableTop="@drawable/book_ride_icon"
+            android:paddingTop="30dp"
+
             />
 
         <Button
-            android:id="@+id/text3"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="Contained button"
-            android:textSize="25dp"
-            android:layout_alignParentRight="true"
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Button 2"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:drawableTop="@drawable/book_ride_icon"
+            android:paddingTop="30dp"
             />
 
-    </RelativeLayout>
 
-</RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

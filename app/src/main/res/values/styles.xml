@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -10,6 +10,17 @@
     </style>
 
     <!-- New MaterialComponents attributes. -->
+
+    <style name="Widget.MaterialComponents.Button.MaterialButtonToggleGroup" parent="Theme.MaterialComponents" >
+        <item name="android:background">@color/red</item>
+
+    </style>
+    <style name="Widget.MaterialComponents.Button.MaterialButton" parent="Theme.MaterialComponents">
+        <item name="android:background">@color/dark_blue</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
         <style name="Widget.MaterialComponents.TextInputLayout.FilledBox" parent="Theme.MaterialComponents">
 
             <item name="boxStrokeWidth">0dp</item>

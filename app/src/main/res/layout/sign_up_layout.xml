@@ -43,9 +43,9 @@
                 android:layout_weight="0"
                 android:paddingTop="0dp"
                 android:paddingBottom="5dp"
-                android:text="Register"
+                android:text="@string/register"
                 android:textColor="@color/dark_blue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 />
             <View
                 android:layout_gravity="center_vertical"
@@ -67,17 +67,16 @@
 
 
             <EditText
-                android:id="@+id/signup_firstname"
+                android:id="@+id/first_name_field"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:hint="First Name"
-                android:background="@drawable/rounded_corner"
+                android:hint="@string/first_name"
                 android:textColorHint="@android:color/black"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:layout_weight="1"
-                android:paddingLeft="10dp"
 
-                    />
+                android:inputType="text"
+                android:importantForAutofill="no" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -87,21 +86,60 @@
 
 
             <EditText
-                android:id="@+id/signup_lastname"
+                android:id="@+id/last_name_field"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:hint="Last Name"
-                android:background="@drawable/rounded_corner"
+                android:hint="@string/last_name"
                 android:textColorHint="@android:color/black"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:layout_weight="1"
-                android:paddingLeft="10dp"
-                />
+                android:importantForAutofill="no"
+                android:inputType="text" />
 
 
         </LinearLayout>
 
 
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            >
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/gender_male"
+                />
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/gender_female"
+                />
+            <RadioButton
+                android:id="@+id/radioP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/gender_other"
+                />
+        </RadioGroup>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -115,18 +153,16 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:paddingTop="5dp"
                 android:src="@drawable/person_icon"
                 android:backgroundTint="@android:color/white"
-                />
+                android:contentDescription="@string/enter_email" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_email_field"
             android:layout_width="300dp"
             android:layout_height="55dp"
-            android:hint="Enter Email"
-            android:paddingStart="5dp"
+            android:hint="@string/enter_email"
             app:endIconMode="clear_text"
             android:layout_marginTop="2dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
@@ -137,6 +173,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -158,27 +195,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
 
         >
         <ImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:src="@drawable/password_icon1"
             android:backgroundTint="@android:color/white"
 
-            />
+            android:contentDescription="@string/enter_password" />
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_password_field"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Password "
+            android:hint="@string/enter_password"
             app:endIconMode="password_toggle"
-            android:paddingStart="5dp"
             app:helperText="* password must be at least 8 characters and include at least 1 number"
             app:helperTextEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
@@ -192,6 +227,7 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/password_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -209,26 +245,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         >
         <ImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:src="@drawable/password_icon2"
             android:backgroundTint="@android:color/white"
 
-            />
+            android:contentDescription="@string/re_enter_password" />
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_re_enter_password_field"
             android:layout_width="300dp"
             android:layout_height="55dp"
-            android:hint="Re-Enter Password "
+            android:hint="@string/re_enter_password"
             app:endIconMode="password_toggle"
-            android:paddingStart="5dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             app:hintTextColor="#000000"
             app:boxStrokeColor="#000000"
@@ -238,6 +272,7 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/password_confirmation_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -253,28 +288,32 @@
     </LinearLayout>
 
         <Button
-            android:id="@+id/mDatePicker"
-            android:text="Date of birth"
+            android:id="@+id/date_of_birth_button"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:text="@string/date_of_birth"
             android:padding="10dp"
             android:layout_marginTop="30dp"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:background="@drawable/rounded_corner"
             android:layout_gravity="center_horizontal"
             />
 
+
+
+
         <Button
+            android:id="@+id/register_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:background="@color/dark_blue"
-            android:text="Register"
-            android:textSize="25dp"
+            android:text="@string/register"
+            android:textSize="25sp"
             android:textColor="@android:color/white"
 
             />
@@ -282,7 +321,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="By clicking Register you are agreeing to  "
+                android:text="@string/agreeing_terms_text"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp"
@@ -290,16 +329,16 @@
 
 
         <TextView
-            android:id="@+id/terms_and_conditions"
+            android:id="@+id/terms_and_conditions_clickable_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="The Terms and Conditions "
+            android:text="@string/the_terms_and_conditions"
             android:textStyle="bold"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:clickable="true"
-            />
+            android:focusable="true" />
 
 
     </LinearLayout>
@@ -308,16 +347,16 @@
         android:id="@+id/already_a_member"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already a member ?"
+        android:text="@string/already_a_member"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="80dp"
-        android:textSize="18dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="18sp"
         android:textColor="@color/dark_blue"
         android:clickable="true"
         android:textStyle="bold"
 
-        />
+        android:focusable="true" />
 
 
 </RelativeLayout>
