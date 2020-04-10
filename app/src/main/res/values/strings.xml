@@ -18,4 +18,10 @@
     <string name="agreeing_terms_text">By clicking Register you are agreeing to</string>
     <string name="the_terms_and_conditions">The Terms and Conditions</string>
     <string name="already_a_member">Already a member ?</string>
+    <string name="swipe_up">swipe_up</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="or_login_with">Or login with</string>
+    <string name="sign_up">Do not have an account ?</string>
+    <string name="forget_your_password">Forget your password?</string>
 </resources>

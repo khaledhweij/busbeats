@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.unundefined.newbusbeats">
+    package="com.unundefined.busbeats">
 
     <application
         android:allowBackup="true"
@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"    >
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.unundefined.busbeats.SignUpActivity"
             android:configChanges="orientation"
 
             android:screenOrientation="portrait"
 
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".openingActivity"
+            android:name="com.unundefined.busbeats.openingActivity"
             android:configChanges="orientation"
 
             android:screenOrientation="portrait"

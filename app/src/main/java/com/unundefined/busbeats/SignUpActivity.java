@@ -1,4 +1,4 @@
-package com.unundefined.newbusbeats;
+package com.unundefined.busbeats;
 
 import android.content.Intent;
 import android.os.Bundle;

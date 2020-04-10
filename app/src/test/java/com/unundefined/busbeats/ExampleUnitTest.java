@@ -1,4 +1,4 @@
-package com.unundefined.newbusbeats;
+package com.unundefined.busbeats;
 
 import org.junit.Test;
 

@@ -74,14 +74,14 @@
                 android:textColorHint="@android:color/black"
                 android:textSize="20sp"
                 android:layout_weight="1"
-
+                android:paddingHorizontal="5dp"
                 android:inputType="text"
                 android:importantForAutofill="no" />
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 />
 
 
@@ -92,6 +92,7 @@
                 android:hint="@string/last_name"
                 android:textColorHint="@android:color/black"
                 android:textSize="20sp"
+                android:paddingHorizontal="5dp"
                 android:layout_weight="1"
                 android:importantForAutofill="no"
                 android:inputType="text" />
@@ -107,30 +108,35 @@
             android:orientation="horizontal"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
             >
+
             <RadioButton
-                android:id="@+id/radioM"
+                android:id="@+id/male"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:checked="true"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:textSize="14sp"
+                android:checked="true"
                 android:text="@string/gender_male"
+                android:textSize="14sp"
                 />
             <RadioButton
-                android:id="@+id/radioF"
+                android:id="@+id/female"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:layout_weight="1"
                 android:textSize="14sp"
                 android:text="@string/gender_female"
+                android:layout_gravity="center"
                 />
             <RadioButton
-                android:id="@+id/radioP"
+                android:id="@+id/other"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill"
@@ -169,6 +175,7 @@
             app:hintTextColor="#000000"
             app:boxStrokeColor="#000000"
             android:gravity="center"
+            android:paddingHorizontal="5dp"
 
             >
 
@@ -221,8 +228,8 @@
             app:boxStrokeColor="#000000"
             app:boxStrokeWidth="5dp"
             android:background="@null"
-
-                >
+            android:paddingHorizontal="5dp"
+            >
 
 
 
@@ -266,7 +273,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             app:hintTextColor="#000000"
             app:boxStrokeColor="#000000"
-
+            android:paddingHorizontal="5dp"
             >
 
 
