@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279698091764",
+    "firebase_url": "https://bus-beats.firebaseio.com",
+    "project_id": "bus-beats",
+    "storage_bucket": "bus-beats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279698091764:android:ddf438f6513cd5443378a1",
+        "android_client_info": {
+          "package_name": "com.unundefined.busbeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279698091764-761i48d2t34e6l1qdnnqnhjmr5tn9apv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMmvy5FIf-ZS4brPq74kpf9MXVt7aREQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279698091764-761i48d2t34e6l1qdnnqnhjmr5tn9apv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

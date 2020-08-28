@@ -1,9 +1,10 @@
-<resources>
-    <string name="app_name">newbusbeats</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">    <string name="app_name">newbusbeats</string>
+    <string name="title_activity_maps">Map</string>
 
 
-    <string name="facebook_app_id">[APP_ID]</string>
-    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+    <string name="facebook_app_id">603018826917625</string>
+    <string name="fb_login_protocol_scheme">fb603018826917625</string>
     <!-- Sign up layout -->
     <string name="register">Register</string>
     <string name="first_name">First Name</string>
@@ -24,4 +25,11 @@
     <string name="or_login_with">Or login with</string>
     <string name="sign_up">Do not have an account ?</string>
     <string name="forget_your_password">Forget your password?</string>
+   <string name="password_rules">* password must be at least 8 characters and include at least 1 number</string>
+    <string name="about" tools:ignore="Typos">About this App \n\n We UnUnDEFINED team redefined some solution to cope with some \n issues that people face while using public transportation
+    . So we came with an idea to help people how to travel from one point to another using public transportation by (to be continued)
+
+        \n \n                  "Copyright @ 2019 UnUnDefined Team"
+
+    </string>
 </resources>

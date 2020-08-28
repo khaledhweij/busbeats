@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+  <!-- Maps -->
+    <LinearLayout
+        android:id="@+id/maps_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginBottom="70dp"
+
+        >
+
+
+        <!-- Search bar -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+        </RelativeLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MapsActivity"
+
+        >
+
+
+    </fragment>
+    </LinearLayout>
+
+    <searchable xmlns:android="http://schemas.android.com/apk/res/android"
+        android:label="@string/newbusBeats"
+        android:hint="@string/search_hint"
+
+        >
+    </searchable>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/maps_layout"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Previous Rides"
+            android:background="@color/white"
+            android:drawableTop="@drawable/previous_rides_icon"
+            android:focusable="true"
+            android:paddingTop="5dp"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Maps"
+            android:background="@color/white"
+            android:drawableTop="@drawable/maps_icon"
+            android:paddingTop="5dp"
+
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:background="@color/white"
+            android:drawableTop="@drawable/settings_icon"
+            android:paddingTop="5dp"
+
+            />
+
+    </LinearLayout>
+
+
+    <!-- Settings -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <!-- General settings -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <View
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                android:background="@color/dark_blue"
+                android:layout_height="2dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=""
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:text="General settings"
+                android:textColor="@color/dark_blue"
+                android:textSize="25sp"
+
+                />
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:background="@color/dark_blue"/>
+
+        </LinearLayout>
+
+        <!-- Language -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/language"
+            android:text="Language"
+            android:textSize="30dp"
+            android:layout_weight="1"
+
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="العربية"
+            android:textSize="20dp"
+            />
+
+        </LinearLayout>
+
+        <!-- Dark mode -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/dark_mode"
+                android:text="Dark Mode"
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Activate"
+                android:textSize="20dp"
+                android:paddingRight="40dp"
+                android:paddingLeft="30dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Notifications -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/notification"
+                android:text="Notifications"
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Activate"
+                android:textSize="20dp"
+                android:paddingRight="40dp"
+                android:paddingLeft="30dp"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Personal Settings -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <View
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                android:background="@color/dark_blue"
+                android:layout_height="2dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:text="Personal settings"
+                android:textColor="@color/dark_blue"
+                android:textSize="25sp"
+
+                />
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/dark_blue"/>
+
+        </LinearLayout>
+
+        <!-- Name -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Full Name "
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:hint="new name"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Birth -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Birth "
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:hint="new name"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Birth -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Birth "
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:hint="new name"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Birth -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Birth "
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:hint="new name"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Birth -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Birth "
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:hint="new name"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+        <!-- Birth -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Birth "
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:hint="new name"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Sign out settings -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+
+            >
+
+            <View
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                android:background="@color/dark_blue"
+                android:layout_height="2dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=""
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:text="Sign Out"
+                android:textColor="@color/dark_blue"
+                android:textSize="25sp"
+
+                />
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:background="@color/dark_blue"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="sign out"
+            android:textSize="23dp"
+            android:textColor="@color/dark_blue"
+            />
+
+    </LinearLayout>
+
+    <!-- Previous Rides -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/grey"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Rides"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="@color/dark_blue"
+            android:textSize="25dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/dark_blue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/previous_rides_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

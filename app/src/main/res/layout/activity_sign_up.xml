@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+
+
+
+
+
+    android:id="@+id/signup_first_layout"
+
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        >
+
+        <View
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@color/dark_blue"
+            android:layout_height="2dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0"
+            android:paddingTop="0dp"
+            android:paddingBottom="5dp"
+            android:text="@string/register"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp"
+            />
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/dark_blue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        >
+
+
+        <EditText
+            android:id="@+id/first_name_field"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:hint="@string/first_name"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:paddingHorizontal="5dp"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            />
+
+
+        <EditText
+            android:id="@+id/last_name_field"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:hint="@string/last_name"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp"
+            android:paddingHorizontal="5dp"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/person_icon"
+            android:backgroundTint="@android:color/white"
+            android:contentDescription="@string/enter_email" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:hint="@string/enter_email"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="2dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:hintTextColor="#000000"
+            app:boxStrokeColor="#000000"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/password_icon1"
+            android:backgroundTint="@android:color/white"
+
+            android:contentDescription="@string/enter_password" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            app:endIconMode="password_toggle"
+            app:helperText="* password must be at least 8 characters and include at least 1 number"
+            app:helperTextEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:hintTextColor="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidth="10dp"
+            android:background="@null"
+            android:paddingHorizontal="5dp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/password_icon2"
+            android:backgroundTint="@android:color/white"
+
+            android:contentDescription="@string/re_enter_password" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:hint="@string/re_enter_password"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:hintTextColor="#000000"
+            app:boxStrokeColor="#000000"
+            android:paddingHorizontal="5dp"
+            >
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_confirmation_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/date_of_birth_button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_birth"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/dark_blue"
+        android:background="@drawable/rounded_corner"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner"
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_button_male"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/gender_male"
+            android:textSize="14sp"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_female"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="@string/gender_female"
+            android:layout_gravity="center"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_not_specified"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:checked="false"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:text="@string/gender_other"
+            />
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/dark_blue"
+        android:text="@string/register"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/agreeing_terms_text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+
+        />
+
+
+    <TextView
+        android:id="@+id/terms_and_conditions_clickable_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/the_terms_and_conditions"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="1"
+        />
+
+
+
+    <TextView
+        android:id="@+id/already_a_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_a_member"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/dark_blue"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:layout_weight="1"
+
+        />
+
+
+
+</LinearLayout>
+

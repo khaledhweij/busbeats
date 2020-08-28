@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="string resource"
+    android:hint="string resource"
+    android:searchMode="queryRewriteFromText"
+
+    android:searchButtonText="string resource"
+    android:inputType="text"
+    android:searchSuggestAuthority="string"
+    android:searchSuggestPath="string"
+    android:searchSuggestSelection="string"
+    android:searchSuggestIntentAction="string"
+    android:searchSuggestIntentData="string"
+    android:includeInGlobalSearch="false"
+    android:searchSettingsDescription="string resource"
+    android:queryAfterZeroResults="false"
+    android:voiceSearchMode="showVoiceSearchButton"
+    android:voiceLanguageModel= "web_search"
+    android:voicePromptText="string resource"
+    android:voiceLanguage="string"
+    android:voiceMaxResults="3"
+    >
+    <actionkey
+
+    android:keycode="KEYCODE_CALL"
+    android:queryActionMsg="string"
+    android:suggestActionMsg="string"
+    android:suggestActionMsgColumn="string" />
+    </searchable>
