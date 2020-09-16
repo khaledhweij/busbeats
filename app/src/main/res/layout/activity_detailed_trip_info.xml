@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +12,7 @@
         android:layout_height="50dp"
         android:textColor="#000000"
         android:textSize="28sp"
-        android:text="Trip info"
+        android:text="@string/trip_info"
         android:layout_centerHorizontal="true"
         />
     <!-- Starting location -->
@@ -23,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/trip_date"
-        android:text="Starting Location"
+        android:text="@string/starting_location"
         android:textColor="#000000"
         android:textSize="22sp"
     />
@@ -48,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/starting_location_label"
-        android:text="destination location"
+        android:text="@string/destination_location"
         android:textColor="#000000"
         android:textSize="22sp" />
 
@@ -69,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/destination_location"
-        android:text="duration"
+        android:text="@string/duration"
         android:textColor="#000000"
         android:textSize="22sp" />
 
@@ -90,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/trip_duration_label"
-        android:text="trip fee"
+        android:text="@string/trip_fee"
         android:textColor="#000000"
         android:textSize="22sp" />
 
@@ -111,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/trip_fee_label"
-        android:text="trip distance"
+        android:text="@string/trip_distance"
         android:textColor="#000000"
         android:textSize="22sp" />
 

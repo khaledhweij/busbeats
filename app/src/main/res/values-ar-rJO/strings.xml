@@ -68,5 +68,13 @@
     <string name="need_help">تريد مساعدة ؟</string>
     <string name="about_the_application">عن التطبيق</string>
     <string name="rate_the_application">قيم التطبيق</string>
+    <string name="done">انتهاء</string>
+    <string name="return_your_password_using_e_mail">ااستعادة كلمة السر عن طريق الايميل</string>
+    <string name="trip_info">معلومات الرحلة</string>
+    <string name="starting_location">نقطة البداية</string>
+    <string name="destination_location">نقطة النهاية</string>
+    <string name="duration">المدة</string>
+    <string name="trip_fee">التكلفة</string>
+    <string name="trip_distance">المسافة</string>
 
 </resources>

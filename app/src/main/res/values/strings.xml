@@ -70,6 +70,12 @@
     <string name="rate_the_application">rate the application</string>
     <string name="done">Done</string>
     <string name="return_your_password_using_e_mail">Return your password using E-mail</string>
+    <string name="trip_info">Trip info</string>
+    <string name="starting_location">Starting Location</string>
+    <string name="destination_location">destination location</string>
+    <string name="duration">duration</string>
+    <string name="trip_fee">trip fee</string>
+    <string name="trip_distance">trip distance</string>
 
     <string-array name="languages">
         <item>English</item>
