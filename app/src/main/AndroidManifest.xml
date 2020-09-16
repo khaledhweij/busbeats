@@ -16,22 +16,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".SearchableActivity"/>
+
+
 
         <!-- search bar -->
         <activity android:name=".MainActivity"
             android:launchMode="singleTop" >
-
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data android:name="android.app.searchable"
                 android:resource="@xml/searchable"/>
+
+
         </activity>
 
 
@@ -77,6 +80,19 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".HelpActivity" />
+
+        <activity android:name=".GeneralSettingsActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+        </activity>
+
     </application>
 
 </manifest>

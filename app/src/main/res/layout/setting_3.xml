@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rectanguler_button"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="multiply"
+            android:drawableStart="@drawable/person_icon"
+            android:drawableEnd="@drawable/arrow_right_icon"
+            android:clickable="true"
+            android:drawablePadding="15dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/khaled_hweij"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <!--"#EAE7E7" -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:clickable="true"
+
+            android:background="@color/white"
+            android:drawableStart="@drawable/settings_applications_icon_35"
+            android:drawableEnd="@drawable/arrow_right_icon"
+            android:paddingRight="10dp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/general_settings"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginStart="30dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:backgroundTintMode="multiply"
+            android:drawableStart="@drawable/notifications_icon"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/arrow_right_icon"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/notifications"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginStart="30dp"
+
+            />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:backgroundTintMode="multiply"
+            android:drawableStart="@drawable/data_usage_icon"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/arrow_right_icon"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/data_usage_and_storage"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/favorite_icon"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/arrow_right_icon"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/share_application"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/red"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginStart="30dp"
+
+            />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/help_icon"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/arrow_right_icon"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/help"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/red"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/main_bar"
+        layout="@layout/activity_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        />
+
+
+
+
+</LinearLayout>
+
+

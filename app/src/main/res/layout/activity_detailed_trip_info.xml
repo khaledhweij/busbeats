@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".DetailedTripInfoActivity">
+
+    <TextView
+        android:id="@+id/trip_date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:text="Trip info"
+        android:layout_centerHorizontal="true"
+        />
+    <!-- Starting location -->
+
+    <TextView
+        android:id="@+id/starting_location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trip_date"
+        android:text="Starting Location"
+        android:textColor="#000000"
+        android:textSize="22sp"
+    />
+
+    <TextView
+        android:id="@+id/starting_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/starting_location_label"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/starting_location_label"
+
+        android:textSize="22sp"
+        tools:text="50 min"
+
+        />
+
+    <!-- Destination location -->
+
+    <TextView
+        android:id="@+id/destination_location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/starting_location_label"
+        android:text="destination location"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/destination_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/destination_location_label"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/destination_location_label"
+        android:textSize="22sp"
+        tools:text="50 min" />
+
+    <!-- Trip duration: -->
+
+    <TextView
+        android:id="@+id/trip_duration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destination_location"
+        android:text="duration"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/trip_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/trip_duration_label"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/trip_duration_label"
+        android:textSize="22sp"
+        tools:text="50 min" />
+
+    <!-- Trip fee: -->
+
+    <TextView
+        android:id="@+id/trip_fee_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trip_duration_label"
+        android:text="trip fee"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/trip_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/trip_fee_label"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/trip_fee_label"
+        android:textSize="22sp"
+        tools:text="0.6 JD's" />
+
+    <!-- Trip distance: -->
+
+    <TextView
+        android:id="@+id/trip_distance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trip_fee_label"
+        android:text="trip distance"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/trip_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/trip_distance_label"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/trip_distance_label"
+        android:textSize="22sp"
+        tools:text="1000m" />
+
+    <View
+        android:id="@+id/black_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/trip_distance_label"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/black" />
+
+    <ListView
+        android:id="@+id/trip_buses_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/black_bar"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</RelativeLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/main_bar"
+        layout="@layout/activity_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+    <include
+        android:layout_above="@+id/main_bar"
+        android:id="@+id/settings_bar_layout"
+        layout="@layout/activity_settings_bar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <!-- Settings -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bar2"
+        android:layout_toRightOf="@+id/settings_bar_layout"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-3dp"
+
+            >
+
+
+            <TextView
+                android:id="@+id/general_settings_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Profile settings"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="30sp" />
+
+            <View
+
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/general_settings_text"
+                android:background="@color/dark_blue"
+
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view5"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edit_icon"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/full_name_profile_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerInParent="true"
+                android:text="Khaled Hweij"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+
+
+            <TextView
+                android:id="@+id/email_profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/full_name_profile_settings"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="10dp"
+                android:text="khaledhweij@gmail.com"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="21sp"
+
+                />
+            <View
+                android:layout_width="240dp"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/email_profile_settings"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/phone_profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_profile_settings"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:drawableLeft="@drawable/phone_icon"
+                android:drawablePadding="10dp"
+                android:text="0790000000"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="21sp"
+
+                />
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/phone_profile_settings"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:background="#000000" />
+
+
+
+            <TextView
+                android:id="@+id/birth_profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_profile_settings"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:drawableLeft="@drawable/birth_icon"
+                android:drawablePadding="10dp"
+                android:text="14-3-1999"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="21sp"
+
+                />
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/birth_profile_settings"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/gender_profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birth_profile_settings"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:drawableLeft="@drawable/gender_icon"
+                android:drawablePadding="10dp"
+                android:text="male"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="21sp"
+
+                />
+            <View
+                android:layout_width="240dp"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/gender_profile_settings"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:background="#000000" />
+
+
+            <Button
+
+                android:id="@+id/change_password_profile_settings"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_profile_settings"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded_corner_gray"
+                android:backgroundTintMode="multiply"
+                android:drawableStart="@drawable/change_password_icon"
+                android:paddingLeft="10dp"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_profile_settings_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter new password"
+                android:layout_below="@+id/gender_profile_settings"
+                app:startIconDrawable="@drawable/change_password_icon"
+                app:endIconMode="password_toggle"
+                app:helperText="* password must be at least 8 characters and include at least 1 number"
+                app:helperTextEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="#000000"
+                app:boxStrokeColor="#000000"
+                app:boxStrokeWidth="10dp"
+                app:boxBackgroundMode="outline"
+                android:background="@null"
+                android:paddingHorizontal="5dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_profile_settings_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_confirmation_profile_settings_text"
+
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/password_profile_settings_text"
+                android:hint="@string/re_enter_password"
+                app:endIconMode="password_toggle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:hintTextColor="#000000"
+                app:boxStrokeColor="#000000"
+                app:startIconDrawable="@drawable/change_password_icon"
+                android:paddingHorizontal="5dp"
+                >
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_confirmation_profile_settings_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Save"
+                android:layout_below="@id/password_confirmation_profile_settings_text"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_corner_gray"
+                android:layout_marginTop="15dp"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

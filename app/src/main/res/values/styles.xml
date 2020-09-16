@@ -1,11 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/red</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <!-- Assign dialog style here. -->
+        <item name="alertDialogTheme">@style/MyAlertDialogStyle</item>
+        <item name="alertDialogStyle">@style/MyAlertDialogStyle</item>
+
+        <!-- Assign custom text styles for title, description, comment -->
 
     </style>
 
@@ -51,7 +58,6 @@
     <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4</item>
     <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5</item>
     <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6</item>
-    <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1</item>
     <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2</item>
     <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
     <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
@@ -75,4 +81,28 @@
             @style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense
         </item>
     </style>
+
+
+    <style name="MyTheme" parent="Theme.AppCompat.DayNight">
+        <!-- Blah blah -->
+    </style>
+
+    <!-- Dialog -->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MyAlertDialogButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MyAlertDialogButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/MyAlertDialogButtonStyle</item>
+    </style>
+
+    <style name="MyAlertDialogButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="MyDialogFadeAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
 </resources>

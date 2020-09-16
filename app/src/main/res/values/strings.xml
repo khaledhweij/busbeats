@@ -32,4 +32,48 @@
         \n \n                  "Copyright @ 2019 UnUnDefined Team"
 
     </string>
+    <string name="previous_rides">Previous Rides</string>
+    <string name="settings">Settings</string>
+    <string name="maps">Maps</string>
+    <string name="set_location_on_map">set location on map</string>
+    <string name="current_location">current location</string>
+    <string name="data_usage_and_storage">Data Usage and storage</string>
+    <string name="help">Help</string>
+    <string name="share_application">Share Application</string>
+    <string name="notifications">Notifications</string>
+    <string name="general_settings">General Settings</string>
+    <string name="khaled_hweij">Khaled Hweij</string>
+    <string name="return_to_previous_window">return to previous window</string>
+    <string name="language">Language</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="delete_my_account">Delete My Account</string>
+    <string name="use_mobile_data">Use Mobile Data</string>
+    <string name="profile_settings">Profile settings</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="username">Username</string>
+    <string name="email_gmail_com">email@gmail.com</string>
+    <string name="_0790000000">0790000000</string>
+    <string name="_14_03_1999">14-03-1999</string>
+    <string name="change_password">Change Password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="save">Save</string>
+    <string name="application_name">Bus Beats</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="application_name_version_number">Bus Beats Version 1.0</string>
+    <string name="copyright_2020_darabkat_team">Copyright @ 2020 Darabkat Team</string>
+    <string name="application_logo">Application Logo</string>
+    <string name="need_help">need help ?</string>
+    <string name="about_the_application">about the application</string>
+    <string name="rate_the_application">rate the application</string>
+    <string name="done">Done</string>
+    <string name="return_your_password_using_e_mail">Return your password using E-mail</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Arabic</item>
+
+    </string-array>
 </resources>

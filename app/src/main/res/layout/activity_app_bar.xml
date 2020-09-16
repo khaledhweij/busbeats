@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:elevation="-10dp"
+    android:orientation="horizontal">
+
+
+
+    <Button
+        android:id="@+id/previous_rides_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:drawableTop="@drawable/previous_rides_icon"
+        android:drawableTint="@color/black"
+        android:focusable="true"
+        android:paddingTop="10dp"
+        android:text="@string/previous_rides"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+        />
+
+    <Button
+        android:id="@+id/maps_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:drawableTop="@drawable/map_icon"
+        android:drawableTint="@color/black"
+        android:paddingTop="10dp"
+        android:text="@string/maps"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+
+        />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:drawableTop="@drawable/settings_icon_24"
+        android:paddingTop="10dp"
+        android:text="@string/settings"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:drawableTint="@color/black"
+        tools:ignore="ButtonStyle" />
+
+</LinearLayout>
+

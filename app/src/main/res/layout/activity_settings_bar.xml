@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- Settings -->
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_bar_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1F985F"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/setting_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="17dp"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp"
+
+
+                />
+
+            <View
+
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/setting_text"
+                android:layout_marginBottom="40dp"
+                android:background="@color/white"
+
+                />
+
+            <Button
+                android:id="@+id/general_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setting_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_corner_settings"
+                android:text="General"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:id="@+id/profile_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/general_settings_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@android:color/transparent"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:id="@+id/NA_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_settings_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@android:color/transparent"
+                android:text="N/A"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <Button
+                android:id="@+id/sign_out_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NA_settings_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@android:color/transparent"
+                android:text="Sign Out"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/sign_out_settings_button"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+
+                />
+
+
+            <Button
+                android:id="@+id/help_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/about_settings_button"
+                android:background="@android:color/transparent"
+                android:text="Help"
+                android:textColor="#E62F2F"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <Button
+                android:id="@+id/about_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:text="About"
+                android:textColor="#E62F2F"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <!--
+                    <ImageView
+                        android:id="@+id/left_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_arrows"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="20dp"
+                        />
+
+            -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

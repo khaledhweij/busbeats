@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
-
-
-
-
-
     android:id="@+id/signup_first_layout"
-
     android:orientation="vertical"
     android:paddingTop="30dp"
     >
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/register_text_layout"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         >
 
         <View
 
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:background="@color/dark_blue"
             android:layout_height="2dp"
 
@@ -40,7 +36,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:paddingTop="0dp"
             android:paddingBottom="5dp"
             android:text="@string/register"
@@ -56,6 +52,21 @@
 
     </LinearLayout>
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/register_text_layout"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -64,6 +75,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginTop="20dp"
         android:layout_weight="1"
+        android:weightSum="2"
         >
 
 
@@ -77,12 +89,13 @@
             android:layout_weight="1"
             android:paddingHorizontal="5dp"
             android:inputType="text"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            tools:ignore="NestedWeights" />
 
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0"
             />
 
 
@@ -114,14 +127,15 @@
         >
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginEnd="5dp"
             android:paddingTop="5dp"
             android:src="@drawable/person_icon"
             android:backgroundTint="@android:color/white"
-            android:contentDescription="@string/enter_email" />
+            android:contentDescription="@string/enter_email"
+            app:tint="@color/dark_blue" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
@@ -262,7 +276,7 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="@color/dark_blue"
-        android:background="@drawable/rounded_corner"
+        android:background="@drawable/rounded_corner_gray"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
         />
@@ -278,7 +292,7 @@
         android:paddingBottom="5dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:background="@drawable/rounded_corner"
+        android:background="@drawable/rounded_corner_gray"
         android:layout_weight="1"
         >
 
@@ -376,7 +390,10 @@
 
         />
 
-
-
 </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
 

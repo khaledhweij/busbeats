@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".LoginActivity"
     android:id="@+id/opening_layout"
     >
 
@@ -17,6 +17,17 @@
         android:visibility="gone"
         android:contentDescription="@string/swipe_up" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/application_name"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed_900"
+        android:paddingTop="15dp"
+        android:visibility="visible"
+        />
 
     <LinearLayout
 
@@ -30,7 +41,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="80dp"
-        android:background="@drawable/rounded_corner"
+        android:background="@drawable/rounded_corner_gray"
         android:orientation="vertical"
         android:visibility="visible"
         >
@@ -83,7 +94,7 @@
             app:endIconMode="clear_text"
             android:layout_marginTop="20dp"
             android:paddingHorizontal="5dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/rounded_corner_settings"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             app:hintTextColor="#000000"
             app:boxStrokeColor="#000000"
@@ -107,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_password"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/rounded_corner_settings"
             app:endIconMode="password_toggle"
             android:paddingHorizontal="5dp"
             android:backgroundTint="@color/white"
@@ -132,6 +143,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/forget_your_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -141,7 +153,7 @@
             android:textColor="@android:color/black"
             android:clickable="true"
             android:textSize="15sp"
-            />
+            android:focusable="true" />
 
 
 
@@ -151,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/rounded_corner_settings"
             android:backgroundTint="@color/bright_green"
             android:textColor="@color/white"
             android:text="@string/sign_in"
@@ -246,6 +258,74 @@
     </LinearLayout>
 
 
+    <RelativeLayout
+        android:id="@+id/forget_your_password_layout"
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:background="@drawable/rounded_bottom_corner"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/return_your_text"
+            android:text="@string/return_your_password_using_e_mail"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view1"
+            android:background="@color/white"
+            android:layout_below="@+id/return_your_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/forget_email_edittext"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view1"
+            android:text="@string/enter_email"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:background="@color/grey"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:autofillHints="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/enter_email"
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dark_blue"
+            android:background="@color/grey"
+            android:layout_below="@+id/forget_email_edittext"
+            android:layout_centerInParent="true"
+
+
+            />
+
+    </RelativeLayout>
 
 
 

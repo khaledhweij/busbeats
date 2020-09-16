@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">newbusbeats</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">603018826917625</string>
+    <string name="fb_login_protocol_scheme">fb603018826917625</string>
+    <!-- Sign up layout -->
+
+    <string name="register">انشاء حساب</string>
+    <string name="first_name">الأسم الأول</string>
+    <string name="last_name">الأسم الأخير</string>
+    <string name="gender_male">ذكر</string>
+    <string name="gender_female">أنثى</string>
+    <string name="gender_other">أفضل عدم التحديد</string>
+    <string name="enter_email">ادخل البريد الألكتروني</string>
+    <string name="enter_password">ادخل كلمة السر</string>
+    <string name="re_enter_password">اعد ادخال كلمة السر</string>
+    <string name="date_of_birth">تاريخ الميلاد</string>
+    <string name="agreeing_terms_text">عند الضغط على انشاء حساب فأنت موافق على الاحكام و الشروط</string>
+    <string name="the_terms_and_conditions">الاحكام و الشروط</string>
+    <string name="already_a_member">هل انت عضو ؟</string>
+    <string name="swipe_up">اسحب للاعلى</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="sign_in">تسجيل دخول</string>
+    <string name="or_login_with">او تسجيل الدخول عن طريق</string>
+    <string name="sign_up">عدم امتلاك حساب</string>
+    <string name="forget_your_password">عدم تذكر كلمة المرور</string>
+    <string name="password_rules">* كلمة السر يجب ان تحتوي على 8 احرف على الاقل مع رقم واحد على الاقل</string>
+    <string name="about" tools:ignore="Typos">About this App \n\n We UnUnDEFINED team redefined some solution to cope with some \n issues that people face while using public transportation
+    . So we came with an idea to help people how to travel from one point to another using public transportation by (to be continued)
+
+        \n \n                  "Copyright @ 2019 UnUnDefined Team"
+
+    </string>
+    <string name="previous_rides">الرحلات السابقة</string>
+    <string name="settings">الاعدادات</string>
+    <string name="maps">الخريطة</string>
+    <string name="set_location_on_map">تحديد الموقع على الخريطة</string>
+    <string name="current_location">الموقع الحالي</string>
+    <string name="data_usage_and_storage">استحدام البيانات و وحدة التخزين</string>
+    <string name="help">المساعدة</string>
+    <string name="share_application">نشر التطبيق</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="general_settings">الاعدادات الرئيسية</string>
+    <string name="khaled_hweij">Khaled Hweij</string>
+    <string name="return_to_previous_window">العودة للصفحة السابقة</string>
+    <string name="language">اللغة</string>
+    <string name="dark_mode">الوضع الليلي</string>
+    <string name="sign_out">الخروج من الحساب</string>
+    <string name="delete_my_account">الغاء الحساب</string>
+    <string name="use_mobile_data">اسخدام البيانات</string>
+    <string name="profile_settings">اعدادات الملف الشخصي</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="username">اسم المسخدم</string>
+    <string name="email_gmail_com">email@gmail.com</string>
+    <string name="_0790000000">0790000000</string>
+    <string name="_14_03_1999">14–3–1999</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="enter_new_password">ادخل كلمة السر الجديدة</string>
+    <string name="save">حفظ</string>
+    <string name="application_name">Bus Beats</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="terms_and_conditions">الأحكام و الشروط</string>
+    <string name="application_name_version_number">النسخة 1 من التطبيق</string>
+    <string name="copyright_2020_darabkat_team">جميع الحقوق محفوظة @ فريق دربكات</string>
+    <string name="application_logo">Application Logo</string>
+    <string name="need_help">تريد مساعدة ؟</string>
+    <string name="about_the_application">عن التطبيق</string>
+    <string name="rate_the_application">قيم التطبيق</string>
+
+</resources>
