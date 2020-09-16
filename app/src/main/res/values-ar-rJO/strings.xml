@@ -76,5 +76,6 @@
     <string name="duration">المدة</string>
     <string name="trip_fee">التكلفة</string>
     <string name="trip_distance">المسافة</string>
+    <string name="start">ابدأ الرحلة</string>
 
 </resources>

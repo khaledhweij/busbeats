@@ -76,6 +76,7 @@
     <string name="duration">duration</string>
     <string name="trip_fee">trip fee</string>
     <string name="trip_distance">trip distance</string>
+    <string name="start">Start</string>
 
     <string-array name="languages">
         <item>English</item>
